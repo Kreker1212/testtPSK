@@ -73,4 +73,4 @@ $converter = new HTMLConverter();
 $data = json_decode($json, true);
 $element = $converter->convert($data);
 
-echo $element->render();
+file_put_contents('result.html', $element->render());
